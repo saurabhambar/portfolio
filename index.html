@@ -8,6 +8,7 @@
   <title>Portfolio 1</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -15,42 +16,71 @@
 <body>
   <header>
     <div class="container">
-    <nav class="flex items-center justify-between">
-      <div class="left flex items-center">
-        <div class="branding">
-          <img src="./images/logo.svg" alt="">
+      <nav class="flex items-center justify-between">
+        <div class="left flex items-center">
+          <div class="branding">
+            <img src="./images/logo.svg" alt="">
+          </div>
+          <div class="">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+          </div>
         </div>
-        <div class="">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Pages</a>
-          <a href="#">Blog</a>
+        <div class="right">
+          <button class="btn btn-primary"> Contact </button>
+        </div>
+      </nav>
+      <div class="hero flex items-center justify-between">
+        <div class="left flex-1 flex justify-center">
+          <img src="./images/man.png" alt="">
+        </div>
+        <div class="right flex-1">
+          <h6>Saurabh Ambar</h6>
+          <h1>I'm a Full Stack <span>Developer</span></h1>
+          <p>I consider myself a responsible, creative individual , with initiative and punctuality.I accept with plea-
+            sure the challenges and goals that organization could assign me, with good handle of the interpersonal
+            relationships, ability to work in teams, ability to work under high pressure, so as to solve problems
+            efficiently and achieve the goals set by the company and my work group.
+          </p>
+          <div>
+            <button class="btn btn-secondary"> Download CV </button>
+          </div>
         </div>
       </div>
-      <div class="right">
-        <button class="btn btn-primary"> Contact </button>
-      </div>
-    </nav>
-    <div class="hero flex items-center justify-between">
-      <div class="left flex-1 flex justify-center">
-        <img src="./images/man.png" alt="">
-      </div>
-      <div class="right flex-1">
-        <h6>Saurabh Ambar</h6>
-        <h1>I'm a Full Stack <span>Developer</span></h1>
-        <p>I consider myself a responsible, creative individual , with initiative and punctuality.I accept with plea-
-  sure the challenges and goals that organization could assign me, with good handle of the interpersonal
-  relationships, ability to work in teams, ability to work under high pressure, so as to solve problems
-  efficiently and achieve the goals set by the company and my work group.
-        </p>
-        <div>
-          <button class="btn btn-secondary"> Download CV </button>
-        </div>
-      </div>
-    </div>
     </div>
   </header>
+
+  <section class="about">
+    <div class="container flex items-center">
+      <!-- flex: Applying the flex class move the picture to left and content to right of it -->
+<!-- items-center: this is used to keep the text in the center of the image. -->
+      <div class="flex-1">
+        <img class="about-me-img" src="./images/man-2.png" alt="">
+        <!-- about-me-img: We create this class to resize the image height  -->
+      </div>
+      <div class="flex-1">
+<!-- flex-1: to keep the image width same as of text body, so we apply this to both the left right div class-->
+        <h1>About <span>Me</span></h1>
+        <h3>Hello! i'm Saurabh Ambar</h3>
+        <p>I consider myself a responsible, creative individual , with initiative and punctuality.I accept with plea-
+          sure the challenges and goals that organization could assign me, with good handle of the interpersonal
+          relationships, ability to work in teams, ability to work under high pressure, so as to solve problems
+          efficiently and achieve the goals set by the company and my work group.
+        </p>
+
+        <div class="social">
+          <a href="#"><img src="./images/website.svg" alt=""></a>
+          <a href="#"><img src="./images/facebook.svg" alt=""></a>
+          <a href="#"><img src="./images/twitter.svg" alt=""></a>
+          <a href="#"><img src="./images/pintrest.svg" alt=""></a>
+          <a href="#"><img src="./images/instagram.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 
