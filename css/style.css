@@ -5,6 +5,8 @@
   --pure: #FFFFFF;
   --ternary: #898989;
   --light: #F2F2F2;
+  --secondary:#070606;
+
 }
 
 
@@ -149,4 +151,86 @@ section.about .social a img{
   width: 100%;
   height: 100%;
   padding: 0.5rem;
+}
+
+.section-heading{
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+.section-heading + p{
+  color: var(--ternary);
+  text-align: center;
+  margin-bottom: 8rem;
+  font-family: 'Lato',sans-serif;
+}
+
+.section-heading span{
+  color: var(--primary);
+}
+/* grid is powerful attribute  */
+/* It will make the column of 3 */
+/* 6 linear card-div divided into column of 3 */
+.services{
+  background: var(--light);
+}
+section.services .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* The above can be done in below way also */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+}
+
+section.services .card-wrapper .card{
+  background: var(--pure);
+  padding: 3rem 2rem;
+  padding-top: 5rem;
+  /* It will overwrite the padding only for top */
+  text-align: center;
+  position: relative;
+  /* It is important to do as we have done "absolute" in the card img, so we have to inform in whom relative it should move */
+
+  /* Otherwise it will move in realtive to the page and move to top  */
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+section.services .card-wrapper .card img{
+  position: absolute;
+  /* When we do absoolute the text and image overlay each other */
+  top: -3.5rem;
+  /* To move the card up */
+  left:50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  /* The left will move the starting part of the img to the center */
+  /* So we need transform, it is used to move img in X direction */
+}
+
+section.services .card-wrapper .card h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+  font-family: 'Lato',sans-serif;
+  var(--ternary);
+  line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+  background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+  color: var(--pure);
 }
