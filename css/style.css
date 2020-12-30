@@ -234,3 +234,89 @@ section.services .card-wrapper .card:hover{
 section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
   color: var(--pure);
 }
+
+section.freelancer{
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+  /* The background is not normal */
+  /* In this background, we have imaage and overlay above it */
+  /* The last one is for opacity, if we keep one then we cannot see anything */
+  /* Two dots in url is because we have to come out of css folder and then move to image folder */
+  color: var(--pure);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+  padding-bottom: 14rem;
+}
+section.freelancer h1{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+  margin-bottom: 2rem;
+  font-family: 'Lato',sans-serif;
+}
+
+
+section.reviews .slider .slide img{
+  height: 100px ;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 0.6rem;
+  /* Border radius to make the img round */
+  object-fit: cover;
+  /* if the image width and height are different and with same heigh and width, we are making it square.  */
+  /* It will get stretch */
+  margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12rem;
+}
+
+section.reviews .slider .slide p{
+  font-family: 'Lato',sans-serif;
+  color: var(--ternary);
+  margin-bottom: 1rem;
+}
+
+section.reviews .slider .slide span{
+  font-size: 0.8rem;
+}
+
+section.reviews .slider-dots .dots{
+  list-style-type: none;
+  display: flex!important;
+  justify-content: center;
+}
+
+section.reviews .slider-dots{
+  margin-top: 3rem;
+}
+
+section.reviews .slider-dots button{
+  font-size: 0;
+  width: 8px;
+  height: 5px;
+  background: var(--ternary);
+  margin-right: 0.3rem;
+  border: none;
+  outline: none;
+  margin-right: 0.3rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button{
+  background: var(--primary);
+  width: 20px;
+}
